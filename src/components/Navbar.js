@@ -34,15 +34,19 @@ function Navbar() {
 							<a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
 								Our Team
 							</a>
-							<a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
+							<a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500">
 								Contact
 							</a>
 						</div>
 					</div>
 					<div className='hidden block lg:inline-flex'>
 						<div className='text-lg font-bold inline-flex flex-wrap justify-center'>
-							<a href="#sign-in" className="inline-block px-5 py-3 text-black transition hover:delay-75 hover:text-green-500 mt-4 lg:mt-0">Sign In</a>
-							<a href="#register" className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition hover:delay-100 hover:text-white hover:bg-green-500 mt-4 lg:mt-0">Register</a>
+							<a href="#sign-in" className="inline-block px-5 py-3 text-black transition hover:delay-75 hover:text-green-500 mt-4 lg:mt-0">
+								Sign In
+							</a>
+							<a href="#register" className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition hover:delay-100 hover:text-white hover:bg-green-500 mt-4 lg:mt-0">
+								Register
+							</a>
 						</div>
 					</div>
 				</div>
