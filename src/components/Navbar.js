@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import Logo from "../images/ev_rental_logo.png";
+import Logo from "../images/navbar/ev_rental_logo.png";
 
 function Navbar() {
 
 	const [sidebar, setSidebar] = useState(false);
-
-	const log = () => {
-		setSidebar(!sidebar)
-		console.log(sidebar)
-	}
 
 	return (
 		<>

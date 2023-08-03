@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from "../components/Hero";
+import BookRide from '../components/BookRide';
 
 function Home() {
 	return (
 		<>
 			<Navbar />
 			<Hero />
-			<h1>Hello Home</h1>
+			<BookRide />
 		</>
 	)
 }

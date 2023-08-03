@@ -1,6 +1,6 @@
 import React from "react";
-import Background from "../images/hero_bg.png";
-import Tesla from "../images/tesla_model_x.png";
+import Background from "../images/hero/hero_bg.png";
+import Tesla from "../images/hero/tesla_model_x.png";
 
 function Hero() {
 	return (
