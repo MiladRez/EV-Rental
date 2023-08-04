@@ -18,19 +18,19 @@ function Navbar() {
 							</button>
 							<div className='absolute top-0 left-0 h-screen w-screen flex justify-center items-center bg-white z-[4]'>
 								<div className='flex flex-col items-center'>
-									<a href="#home" className='text-2xl my-3 transition hover:delay-75 hover:text-green-500'>
+									<a href="#home" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 										Home
 									</a>
-									<a href="#about" className='text-2xl my-3 transition hover:delay-75 hover:text-green-500'>
+									<a href="#about" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 										About
 									</a>
-									<a href="#vehicle-selection" className='text-2xl my-3 transition hover:delay-75 hover:text-green-500'>
+									<a href="#vehicle-selection" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 										Vehicle Selection
 									</a>
-									<a href="#team" className='text-2xl my-3 transition hover:delay-75 hover:text-green-500'>
+									<a href="#team" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 										Our Team
 									</a>
-									<a href="#contact" className='text-2xl my-3 transition hover:delay-75 hover:text-green-500'>
+									<a href="#contact" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 										Contact
 									</a>
 								</div>
@@ -56,29 +56,29 @@ function Navbar() {
 					<div className="hidden lg:inline-flex lg:items-center lg:w-auto">
 						{/* Desktop nav items */}
 						<div className="text-lg text-black font-bold inline-flex justify-center lg:flex-grow">
-							<a href="#home" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
+							<a href="#home" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 								Home
 							</a>
-							<a href="#about" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
+							<a href="#about" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 								About
 							</a>
-							<a href="#vehicle-selection" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
+							<a href="#vehicle-selection" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 								Vehicle Selection
 							</a>
-							<a href="#team" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500 mr-5">
+							<a href="#team" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 								Our Team
 							</a>
-							<a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 transition hover:delay-75 hover:text-green-500">
+							<a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500">
 								Contact
 							</a>
 						</div>
 					</div>
 					<div className='hidden block lg:inline-flex'>
 						<div className='text-lg font-bold inline-flex flex-wrap justify-center'>
-							<a href="#sign-in" className="inline-block px-5 py-3 text-black transition hover:delay-75 hover:text-green-500 mt-4 lg:mt-0">
+							<a href="#sign-in" className="inline-block px-5 py-3 text-black transition duration-300 hover:text-green-500 mt-4 lg:mt-0">
 								Sign In
 							</a>
-							<a href="#register" className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition hover:delay-100 hover:text-white hover:bg-green-500 mt-4 lg:mt-0">
+							<a href="#register" className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition duration-500 hover:text-white hover:bg-green-500 mt-4 lg:mt-0">
 								Register
 							</a>
 						</div>
