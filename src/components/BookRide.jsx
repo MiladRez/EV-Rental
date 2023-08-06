@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BannerBG from '../images/book-ride/book_ride_bg.jpg';
 import Background from "../images/book-ride/hero_bg_mirror.png";
 import SelectRideIcon from "../images/book-ride/select_ride_icon.png";
 import SelectLocationIcon from "../images/book-ride/select_location_icon.png";
 import SelectDateIcon from "../images/book-ride/select_date_icon.png";
+import moment from 'moment';
 
 const ev_selection = [
 	{ value: 'tesla-model-s', label: 'Tesla Model S' },
@@ -28,7 +29,19 @@ const location_selection = [
 	{ value: 'milton', label: 'Milton' },
 ]
 
+// Date formatting for date pick-up and drop-off fields
+var date = moment();
+var currentDate = date.format("YYYY-MM-DD");
+
 function BookRide() {
+
+	const [pickupDate, setPickupDate] = useState(currentDate);
+	const [dropoffDate, setDropoffDate] = useState(null);
+
+	const onChangeDate = (e) => {
+		setPickupDate(e.target.value);
+		setDropoffDate(e.target.value > dropoffDate ? e.target.value : dropoffDate)
+	}
 
 	return (
 		<>
@@ -47,10 +60,10 @@ function BookRide() {
 											Select your EV
 										</label>
 									</div>
-									<select className='w-full px-5 py-3 rounded' required>
-										<option disabled selected>Select your ride</option>
-										{ev_selection.map((car) => (
-											<option value={car.value}>
+									<select required defaultValue={'default'}  className='w-full px-5 py-3 rounded text-neutral-500'>
+										<option value="default" disabled>Select your ride</option>
+										{ev_selection.map((car, index) => (
+											<option value={car.value} key={index}>
 												{car.label}
 											</option>
 										))}
@@ -63,10 +76,10 @@ function BookRide() {
 											Pick-up Location
 										</label>
 									</div>
-									<select className='w-full px-5 py-3 rounded'>
-										<option disabled selected>Select a pick-up location</option>
-										{location_selection.map((car) => (
-											<option value={car.value}>
+									<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500'>
+										<option value="default" disabled>Select a pick-up location</option>
+										{location_selection.map((car, index) => (
+											<option value={car.value} key={index}>
 												{car.label}
 											</option>
 										))}
@@ -79,10 +92,10 @@ function BookRide() {
 											Drop-off Location
 										</label>
 									</div>
-									<select className='w-full px-5 py-3 rounded'>
-										<option disabled selected>Select a drop-off location</option>
-										{location_selection.map((car) => (
-											<option value={car.value}>
+									<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500'>
+										<option value="default" disabled>Select a drop-off location</option>
+										{location_selection.map((car, index) => (
+											<option value={car.value} key={index}>
 												{car.label}
 											</option>
 										))}
@@ -95,7 +108,13 @@ function BookRide() {
 											Pick-up Date
 										</label>
 									</div>
-									<input type='date' className='form-input w-full px-5 py-3 rounded' />
+									<input
+										type='date'
+										min={currentDate}
+										value={pickupDate}
+										onChange={onChangeDate}
+										className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono' 
+									/>
 								</div>
 								<div>
 									<div className='relative flex my-1.5'>
@@ -104,7 +123,13 @@ function BookRide() {
 											Drop-off Date
 										</label>
 									</div>	
-									<input type='date' className='form-input w-full px-5 py-3 rounded' />
+									<input
+										type='date'
+										min={pickupDate}
+										value={dropoffDate}
+										onChange={(e) => setDropoffDate(e.target.value)}
+										className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono' 	
+									/>
 								</div>
 								<button className='w-full border self-end h-13 bg-green-400 border border-green-400 shadow-lg shadow-green-300 px-5 pb-3 pt-2 text-white text-lg font-bold rounded hover:shadow-green-400 transition duration-500 hover:bg-green-500'>
 									Search
