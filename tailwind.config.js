@@ -8,8 +8,8 @@ module.exports = {
   	],
 	theme: {
 		screens: {
-			'xs': '430px', ...defaultTheme.screens,
-			'car_disappear': '880px', ...defaultTheme.screens,
+			'xs': '450px', ...defaultTheme.screens,
+			'car_disappear': '930px', ...defaultTheme.screens,
 		},
 		extend: {
 			fontFamily: {
