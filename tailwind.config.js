@@ -9,7 +9,9 @@ module.exports = {
 	theme: {
 		screens: {
 			'xs': '450px', ...defaultTheme.screens,
-			'car_disappear': '930px', ...defaultTheme.screens,
+			'car_disappear': [
+				{ 'min': '930px', 'max': '1023px', ...defaultTheme.screens }
+			]
 		},
 		extend: {
 			fontFamily: {

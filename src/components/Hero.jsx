@@ -4,9 +4,9 @@ import Tesla from "../images/hero/tesla_model_x.png";
 
 function Hero() {
 	return (
-		<section className="relative h-screen w-screen flex justify-center bg-neutral-100">
+		<section className="relative h-screen w-full flex justify-center bg-neutral-100">
 			<img src={Background} className="absolute w-full h-full z-0 hidden sm:block" alt="hero background"></img>
-			<div className="relative h-screen inline-flex max-w-screen-xl w-full mt-7 items-center justify-center sm:justify-start">
+			<div className="relative flex max-w-screen-xl w-full mt-7 items-center justify-center sm:justify-start">
 				<div className="w-80 xs:w-[28rem] z-[2] inline-flex justify-center flex-col flex-shrink-0 items-center sm:items-start sm:ml-14">
 					<h2 className="text-lg font-bold xs:text-2xl pb-4">Rent an EV now </h2>
 					<h1 className="text-2xl xs:text-2xl md:text-5xl pb-8 font-bold text-center sm:text-left">Find the perfect car with the <span className="text-green-400">lowest rates</span> in the market</h1>
@@ -26,7 +26,7 @@ function Hero() {
 						</a>
 					</div>
 				</div>
-				<img src={Tesla} className="absolute right-0 mt-16 w-2/3 z-[1] max-w-3xl hidden car_disappear:inline-flex" alt="hero main car"></img>
+				<img src={Tesla} className="absolute right-0 mt-16 w-2/3 z-10 max-w-3xl hidden car_disappear:flex lg:flex" alt="hero main car"></img>
 			</div>
 		</section>
 	)

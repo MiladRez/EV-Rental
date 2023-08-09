@@ -36,7 +36,7 @@ var currentDate = date.format("YYYY-MM-DD");
 function BookRide() {
 
 	const [pickupDate, setPickupDate] = useState(currentDate);
-	const [dropoffDate, setDropoffDate] = useState(null);
+	const [dropoffDate, setDropoffDate] = useState(undefined);
 
 	const onChangeDate = (e) => {
 		setPickupDate(e.target.value);
@@ -44,7 +44,7 @@ function BookRide() {
 	}
 
 	return (
-		<div className='relative h-full w-screen bg-neutral-100'>
+		<section className='relative h-full w-full bg-neutral-100'>
 			<img src={Background} className="absolute w-full h-full z-0 top-[-1.6px] -scale-y-100 hidden sm:block" alt="hero background"></img>
 			<div className='flex justify-center mx-10 pb-20'>
 				<div className='relative bg-white h-fit w-screen max-w-screen-xl rounded shadow-xl'>
@@ -137,7 +137,7 @@ function BookRide() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

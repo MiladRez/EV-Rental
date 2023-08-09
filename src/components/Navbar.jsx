@@ -37,7 +37,7 @@ function Navbar() {
 					</div>
 				: null
 			}
-			<div className='absolute z-[3] w-full max-w-screen-xl flex items-center justify-between bg-transparent px-5 pt-3'>
+			<div className='absolute z-10 w-full max-w-screen-xl flex items-center justify-between bg-transparent px-5 pt-3'>
 				{/* Logo div */}
 				<button className="absolute top-32 xs:top-24 w-60 xs:w-72 sm:w-44 mr-auto ml-auto right-0 left-0 sm:static sm:flex sm:items-center sm:flex-shrink-0 text-black sm:mr-6 sm:ml-10">
 					<img src={Logo} className='sm:my-5' alt='ev rental logo'></img>

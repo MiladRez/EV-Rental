@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from "../components/Hero";
 import BookRide from '../components/BookRide';
 import PlanTrip from '../components/PlanTrip';
+import EVSelection from '../components/EVSelection';
 
 function Home() {
 	return (
@@ -11,6 +12,7 @@ function Home() {
 			<Hero />
 			<BookRide />
 			<PlanTrip />
+			<EVSelection />
 		</>
 	)
 }
