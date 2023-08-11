@@ -86,7 +86,7 @@ function EVSelection() {
 	const [selectedCar, setSelectedCar] = useState(vehicle_list[0]);
 
 	return (
-		<section className='relative h-full w-full bg-neutral-100'>
+		<section className='h-full w-full bg-neutral-100'>
 			<div className="flex justify-center mx-10 py-20">
 				<div className="flex items-center flex-col w-full max-w-screen-xl">
 					<div className="flex flex-col items-center w-full text-center mb-16">

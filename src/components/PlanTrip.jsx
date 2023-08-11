@@ -6,7 +6,7 @@ import Drive from "../images/plan-trip/drive_img.png";
 function PlanTrip() {
 
 	return (
-		<section className='relative h-full w-full bg-neutral-100'>
+		<section className='h-full w-full bg-neutral-100'>
 			<div className="flex items-center flex-col py-20">
 				<div className="max-w-screen-xl">
 					<div className="flex flex-col items-center mb-14 text-center">

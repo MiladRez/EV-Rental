@@ -130,7 +130,7 @@ function BookRide() {
 									className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono' 	
 								/>
 							</div>
-							<button className='w-full border self-end h-13 bg-green-400 border border-green-400 shadow-lg shadow-green-300 px-5 pb-3 pt-2 text-white text-lg font-bold rounded hover:shadow-green-400 transition duration-500 hover:bg-green-500'>
+							<button className='w-full self-end h-13 bg-green-400 border border-green-400 shadow-lg shadow-green-300 px-5 pb-3 pt-2 text-white text-lg font-bold rounded hover:shadow-green-400 transition duration-500 hover:bg-green-500'>
 								Search
 							</button>
 						</form>
