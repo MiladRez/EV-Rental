@@ -10,7 +10,7 @@ function Hero() {
 				<div className="w-80 xs:w-[28rem] z-[2] inline-flex justify-center flex-col flex-shrink-0 items-center sm:items-start sm:ml-14">
 					<h2 className="text-lg font-bold xs:text-2xl pb-4">Rent an EV now </h2>
 					<h1 className="text-2xl xs:text-2xl md:text-5xl pb-8 font-bold text-center sm:text-left">Find the perfect car with the <span className="text-green-400">lowest rates</span> in the market</h1>
-					<p className="text-md pb-6 text-center sm:text-left">Rent the car of your dreams. Unbeatable prices, unlimited range, flexible pick-up options and much more.</p>
+					<p className="text-md pb-6 text-center sm:text-left text-stone-600">Rent the car of your dreams. Unbeatable prices, unlimited range, flexible pick-up options and much more.</p>
 					<div className="flex flex-col xs:flex-row">
 						<a href="#book-ride" className="inline-block font-bold bg-green-400 px-6 py-4 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition duration-500 hover:text-white hover:bg-green-500 xs:mr-6 my-4">
 							Book Ride

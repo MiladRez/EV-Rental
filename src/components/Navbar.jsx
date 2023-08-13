@@ -54,7 +54,7 @@ function Navbar() {
 
 				<div className="hidden lg:inline-flex lg:items-center lg:w-auto">
 					{/* Desktop nav items */}
-					<div className="text-lg text-black font-bold inline-flex justify-center lg:flex-grow">
+					<div className="text-lg text-black font-medium inline-flex justify-center lg:flex-grow">
 						<a href="#home" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 							Home
 						</a>

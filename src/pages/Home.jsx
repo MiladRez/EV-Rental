@@ -6,6 +6,8 @@ import PlanTrip from '../components/PlanTrip';
 import EVSelection from '../components/EVSelection';
 import SaveBigBanner from '../components/SaveBigBanner';
 import ChooseUs from '../components/ChooseUs';
+import CustomerReviews from '../components/CustomerReviews';
+import FAQ from '../components/FAQ';
 
 function Home() {
 	return (
@@ -17,6 +19,8 @@ function Home() {
 			<EVSelection />
 			<SaveBigBanner />
 			<ChooseUs />
+			<CustomerReviews />
+			<FAQ />
 		</>
 	)
 }

@@ -88,10 +88,10 @@ function EVSelection() {
 	return (
 		<section className='h-full w-full bg-neutral-100'>
 			<div className="flex justify-center mx-10 py-20">
-				<div className="flex items-center flex-col w-full max-w-screen-xl">
-					<div className="flex flex-col items-center w-full text-center mb-16">
+				<div className="w-full max-w-screen-xl">
+					<div className="flex flex-col items-center w-full text-center mb-14">
 						<h1 className="text-4xl md:text-5xl font-bold py-4 antialiased">Our EV selection</h1>
-						<p className="text-md text-stone-500 py-4 w-72 md:w-1/3">Choose from a variety of our amazing EVs to rent for your next adventure or business trip</p>
+						<p className="text-md text-stone-600 py-4 w-72 md:w-1/3">Choose from a variety of our amazing EVs to rent for your next adventure or business trip</p>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 justify-between items-center lg:items-end w-full">
 						<div className="flex flex-col flex-shrink-0 mb-12 lg:mb-0 col-span-2 lg:col-span-1">
