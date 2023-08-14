@@ -8,6 +8,7 @@ import SaveBigBanner from '../components/SaveBigBanner';
 import ChooseUs from '../components/ChooseUs';
 import CustomerReviews from '../components/CustomerReviews';
 import FAQ from '../components/FAQ';
+import DownloadApp from '../components/DownloadApp';
 
 function Home() {
 	return (
@@ -21,6 +22,7 @@ function Home() {
 			<ChooseUs />
 			<CustomerReviews />
 			<FAQ />
+			<DownloadApp />
 		</>
 	)
 }

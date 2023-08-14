@@ -19,6 +19,9 @@ module.exports = {
 			},
 			scale: {
 				'-100': '-1',
+			},
+			transitionProperty: {
+				'max-height': 'max-height'
 			}
 		},
   	},
