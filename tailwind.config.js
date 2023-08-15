@@ -11,7 +11,8 @@ module.exports = {
 			'xs': '450px', ...defaultTheme.screens,
 			'car_disappear': [
 				{ 'min': '930px', 'max': '1023px', ...defaultTheme.screens }
-			]
+			],
+			'iphone_disappear': '945px', ...defaultTheme.screens,
 		},
 		extend: {
 			fontFamily: {
