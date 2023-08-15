@@ -9,6 +9,7 @@ import ChooseUs from '../components/ChooseUs';
 import CustomerReviews from '../components/CustomerReviews';
 import FAQ from '../components/FAQ';
 import DownloadApp from '../components/DownloadApp';
+import Footer from '../components/Footer';
 
 function Home() {
 	return (
@@ -23,6 +24,7 @@ function Home() {
 			<CustomerReviews />
 			<FAQ />
 			<DownloadApp />
+			<Footer />
 		</>
 	)
 }

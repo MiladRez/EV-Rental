@@ -12,7 +12,7 @@ function DownloadApp() {
 				<div className="absolute flex justify-around w-full h-full top-0 left-0">
 					<div className="w-1/2"></div>
 					<div className="flex justify-center w-1/2">
-						<img src={IPhone} className="relative w-full max-w-lg object-cover object-top top-20 px-16 hidden iphone_disappear:block" alt="iphone mockup" />
+						<img src={IPhone} className="relative w-full max-w-lg object-cover object-top top-20 px-12 hidden iphone_disappear:block" alt="iphone mockup" />
 					</div>
 				</div>
 				<div className="flex iphone_disappear:justify-around gap-24 w-full max-w-screen-xl z-10">
