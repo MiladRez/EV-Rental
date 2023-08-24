@@ -159,7 +159,7 @@ function EVSelection() {
 										</span>
 									</div>
 								</div>
-								<button className="bg-green-400 w-full px-2 py-3 mt-4 text-white text-xl uppercase font-bold antialiased shadow-lg shadow-green-300 border border-green-400 rounded transition duration-500 hover:bg-green-500 hover:shadow-green-400">
+								<button className="bg-green-400 w-full px-2 py-3 mt-4 text-white text-xl uppercase font-bold antialiased shadow-lg shadow-green-300 border border-green-400 rounded transition duration-500 hover:bg-green-500 hover:shadow-green-400" onClick={() => window.scrollTo({top: 585, left: 0, behavior: "smooth"})}>
 									Reserve Now
 								</button>
 							</div>
