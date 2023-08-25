@@ -9,27 +9,29 @@ function Navbar() {
 		<nav className="flex justify-center">
 			{  /* Mobile: Sidebar */
 				sidebar ?
-					<div>
-						<button onClick={() => setSidebar(!sidebar)} className='absolute z-10 top-10 right-6 transition hover:delay-75 hover:text-green-500'>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-								<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
+					<div className='fixed w-full h-full top-0 left-0 z-20'>
+						<div className='w-full flex justify-end'>
+							<button onClick={() => setSidebar(!sidebar)} className='relative right-6 top-10 z-20 transition hover:delay-75 hover:text-green-500'>
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+									<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+								</svg>
+							</button>	
+						</div>
 						<div className='absolute top-0 left-0 h-screen w-screen flex justify-center items-center bg-white z-[4]'>
 							<div className='flex flex-col items-center'>
-								<a href="#home" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
+								<a href="/" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 									Home
 								</a>
-								<a href="#about" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
+								<a href="/about" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 									About
 								</a>
-								<a href="#vehicle-selection" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
+								<a href="/vehicles" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 									Vehicle Selection
 								</a>
-								<a href="#team" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
+								<a href="/team" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 									Our Team
 								</a>
-								<a href="#contact" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
+								<a href="/contact" className='text-2xl my-3 transition duration-300 hover:text-green-500'>
 									Contact
 								</a>
 							</div>
@@ -55,19 +57,19 @@ function Navbar() {
 				<div className="hidden lg:inline-flex lg:items-center lg:w-auto">
 					{/* Desktop nav items */}
 					<div className="text-lg text-black font-medium inline-flex justify-center lg:flex-grow">
-						<a href="#home" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
+						<a href="/" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 							Home
 						</a>
-						<a href="#about" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
+						<a href="/about" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 							About
 						</a>
-						<a href="#vehicle-selection" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
+						<a href="/vehicles" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 							Vehicle Selection
 						</a>
-						<a href="#team" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
+						<a href="/team" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500 mr-5">
 							Our Team
 						</a>
-						<a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500">
+						<a href="/contact" className="block mt-4 lg:inline-block lg:mt-0 transition duration-300 hover:text-green-500">
 							Contact
 						</a>
 					</div>

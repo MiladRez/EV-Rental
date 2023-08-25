@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
-import Hero from "../components/Hero";
-import BookRide from '../components/BookRide';
-import PlanTrip from '../components/PlanTrip';
-import EVSelection from '../components/EVSelection';
-import SaveBigBanner from '../components/SaveBigBanner';
-import ChooseUs from '../components/ChooseUs';
-import CustomerReviews from '../components/CustomerReviews';
-import FAQ from '../components/FAQ';
-import DownloadApp from '../components/DownloadApp';
+import Hero from "../components/HomePage/Hero";
+import BookRide from '../components/HomePage/BookRide';
+import PlanTrip from '../components/HomePage/PlanTrip';
+import EVSelection from '../components/HomePage/EVSelection';
+import SaveBigBanner from '../components/HomePage/SaveBigBanner';
+import ChooseUs from '../components/HomePage/ChooseUs';
+import CustomerReviews from '../components/HomePage/CustomerReviews';
+import FAQ from '../components/HomePage/FAQ';
+import DownloadApp from '../components/HomePage/DownloadApp';
 import Footer from '../components/Footer';
 
 function Home() {

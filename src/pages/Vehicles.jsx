@@ -1,11 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import EVSelection from '../components/HomePage/EVSelection';
+import PageHeader from '../components/PageHeader';
 
 function Vehicles() {
 	return (
 		<>
 			<Navbar />
-			<h1>Hello Vehicles</h1>
+			<PageHeader title="Vehicle Selection" />
+			<EVSelection />
+			<Footer />
 		</>
 	)
 }

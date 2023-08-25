@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<footer>
 			<div className="flex justify-center mx-10 py-12">
-				<div className="grid grid-cols-1 sm:grid-cols-2 iphone_disappear:grid-cols-4 iphone_disappear:justify-items-center gap-16 iphone_disappear:gap-10 max-w-screen-lg">
+				<div className="grid grid-cols-1 sm:grid-cols-2 iphone_disappear:grid-cols-4 iphone_disappear:justify-items-center gap-16 iphone_disappear:gap-10 max-w-screen-lg px-2">
 					<div className="flex flex-col gap-4 items-center sm:items-start">
 						<h2 className="text-xl"><span className="font-bold text-green-400 italic pr-1">EV</span> Rental</h2>
 						<p className="text-sm/relaxed text-stone-600 text-center sm:text-start">
@@ -24,7 +24,6 @@ function Footer() {
 								</svg>
 								<h3 className="font-bold">evrental@business.com</h3>
 							</a>
-							<p></p>
 						</div>
 					</div>
 					<div className="flex flex-col gap-4 items-center sm:items-start">
@@ -40,7 +39,7 @@ function Footer() {
 					<div className="flex flex-col gap-4 items-center sm:items-start">
 						<h2 className="text-xl font-bold">Dealership Hours</h2>
 						<p className="text-sm">All locations</p>
-						<div className="flex flex-col gap-2 text-sm text-center sm:items-start">
+						<div className="flex flex-col gap-2 text-sm text-center iphone_disappear:text-start sm:items-start">
 							<h3>Mon - Fri: 6:00AM - 9:00PM</h3>
 							<h3>Sat: 8:00AM - 5:00PM</h3>
 							<h3>Sun: Closed</h3>
