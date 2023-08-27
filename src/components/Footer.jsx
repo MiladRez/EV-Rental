@@ -29,11 +29,21 @@ function Footer() {
 					<div className="flex flex-col gap-4 items-center sm:items-start">
 						<h2 className="text-xl font-bold">Company</h2>
 						<div className="flex flex-col gap-2 text-sm items-center sm:items-start">
-							<h3>Toronto</h3>
-							<h3>Montreal</h3>
-							<h3>Careers</h3>
-							<h3>Blog</h3>
-							<h3>Mobile</h3>
+							<h3 className="hover:text-green-400 transition duration-300 cursor-pointer">
+								Toronto
+							</h3>
+							<h3 className="hover:text-green-400 transition duration-300 cursor-pointer">
+								Montreal
+							</h3>
+							<h3 className="hover:text-green-400 transition duration-300 cursor-pointer">
+								Careers
+							</h3>
+							<h3 className="hover:text-green-400 transition duration-300 cursor-pointer">
+								Blog
+							</h3>
+							<h3 className="hover:text-green-400 transition duration-300 cursor-pointer">
+								Mobile
+							</h3>
 						</div>
 					</div>
 					<div className="flex flex-col gap-4 items-center sm:items-start">

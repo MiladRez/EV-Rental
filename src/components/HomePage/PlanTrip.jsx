@@ -15,17 +15,17 @@ function PlanTrip() {
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center py-6 gap-16">
 						<div className="flex flex-col items-center py-4 md:py-0">
-							<img src={SelectCar} className="py-6 w-32 md:w-fit" alt="select a car img"/>
+							<img src={SelectCar} loading="lazy" className="py-6 w-32 md:w-fit" alt="select a car img"/>
 							<h1 className="text-2xl font-bold py-2">Select a Car</h1>
 							<p className="w-72 md:w-full py-2 text-stone-600">Choose from a large variety of our latest EVs that best fits your driving needs.</p>
 						</div>
 						<div className="flex flex-col items-center py-4 md:py-0">
-							<img src={ContactOperator} className="py-6 w-32 md:w-fit" alt="contact an operator img"/>
+							<img src={ContactOperator} loading="lazy" className="py-6 w-32 md:w-fit" alt="contact an operator img"/>
 							<h1 className="text-2xl font-bold py-2">Contact an Operator</h1>
 							<p className="w-72 md:w-full py-2 text-stone-600">Connect with a personal operator that will walk you through every step of the process.</p>
 						</div>
 						<div className="flex flex-col items-center py-4 md:py-0">
-							<img src={Drive} className="py-6 w-32 md:w-fit" alt="drive on the road img"/>
+							<img src={Drive} loading="lazy" className="py-6 w-32 md:w-fit" alt="drive on the road img"/>
 							<h1 className="text-2xl font-bold py-2">Drive</h1>
 							<p className="w-72 md:w-full py-2 text-stone-600">Take your EV on the road with 24/7 customer support to ensure the best drive.</p>
 						</div>

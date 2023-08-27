@@ -1,7 +1,22 @@
 import React from "react";
 import JohnAvatar from "../../images/HomePage/customer-reviews/john-avatar.png";
 import KatherineAvatar from "../../images/HomePage/customer-reviews/katherine-avatar.png";
-import QuotesImg from "../../images/HomePage/customer-reviews/quote-img.png";
+import CustomerReviewCard from "./CustomerReviewCard";
+
+const customer_reviews = [
+	{
+		img: JohnAvatar,
+		review: "We rented a car from this website and had an amazing experience! The booking process was easy and the rental rates were very affordable.",
+		name: "John Fernandes",
+		location: "Mississauga"
+	},
+	{
+		img: KatherineAvatar,
+		review: "Our rental car was in great condition and we really enjoyed the drive from our trip. Highly recommend to anyone looking for a quick and cheap rental!",
+		name: "Katherine Clyne",
+		location: "Toronto"
+	}
+]
 
 function CustomerReviews() {
 	return (
@@ -17,36 +32,9 @@ function CustomerReviews() {
 						</p>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<div className="flex flex-col justify-between rounded shadow-xl px-6 pt-8 pb-2 lg:px-12 lg:pt-14 lg:pb-4 bg-white">
-							<p className="text-xl lg:text-2xl leading-normal">
-								"We rented a car from this website and had an amazing experience! The booking process was easy and the rental rates were very affordable."
-							</p>
-							<div className="flex justify-between py-8">
-								<div className="flex">
-									<img src={JohnAvatar} className="w-20" alt="man avatar" />
-									<div className="flex flex-col justify-center px-2 xs:px-4">
-										<h3 className="text-lg font-bold">John Fernandes</h3>
-										<h4>Mississauga</h4>
-									</div>
-								</div>
-								<img src={QuotesImg} className="self-end w-16 hidden xs:block" alt="quotes logo" />
-							</div>
-						</div>
-						<div className="flex flex-col justify-between rounded shadow-xl px-6 pt-8 pb-2 lg:px-12 lg:pt-14 lg:pb-4 bg-white">
-							<p className="text-xl lg:text-2xl leading-normal">
-								"Our rental car was in great condition and we really enjoyed the drive from our trip. Highly recommend to anyone looking for a quick and cheap rental!"
-							</p>
-							<div className="flex justify-between py-8">
-								<div className="flex">
-									<img src={KatherineAvatar} className="w-20" alt="woman avatar" />
-									<div className="flex flex-col justify-center px-2 xs:px-4">
-										<h3 className="text-lg font-bold">Katherine Clyne</h3>
-										<h4>Toronto</h4>
-									</div>
-								</div>
-								<img src={QuotesImg} className="self-end w-16 hidden xs:block" alt="quotes logo" />
-							</div>
-						</div>
+						{customer_reviews.map((review, index) => (
+							<CustomerReviewCard review={review.review} name={review.name} location={review.location} img={review.img} />
+						))}
 					</div>
 				</div>
 			</div>

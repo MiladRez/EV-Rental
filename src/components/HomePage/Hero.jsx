@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Background from "../../images/HomePage/hero/hero_bg.png";
 import Tesla from "../../images/HomePage/hero/tesla_model_x.png";
 
 function Hero() {
+	const [loaded, setLoaded] = useState(false);
+
 	return (
 		<section className="relative h-screen w-full flex justify-center bg-neutral-100">
-			<img src={Background} className="absolute w-full h-full z-0 hidden sm:block" alt="hero background"></img>
+			<img src={Background} loading="lazy" className="absolute w-full h-full z-0 hidden sm:block" alt="hero background"></img>
 			<div className="relative flex max-w-screen-xl w-full mt-7 items-center justify-center sm:justify-start">
 				<div className="w-80 xs:w-[28rem] z-[2] inline-flex justify-center flex-col flex-shrink-0 items-center sm:items-start sm:ml-14">
 					<h2 className="text-lg font-bold xs:text-2xl pb-4">Rent an EV now </h2>
@@ -26,7 +28,7 @@ function Hero() {
 						</a>
 					</div>
 				</div>
-				<img src={Tesla} className="absolute right-0 mt-16 w-2/3 z-10 max-w-3xl hidden car_disappear:flex lg:flex" alt="hero main car"></img>
+				<img src={Tesla} loading="lazy" className={`${loaded ? "opacity-100" : "opacity-0"} transition-all duration-300 absolute bg-cover bg-center right-0 mt-16 w-2/3 z-10 max-w-3xl hidden lg:flex`} alt="hero main car" onLoad={() => setLoaded(true)} />	
 			</div>
 		</section>
 	)

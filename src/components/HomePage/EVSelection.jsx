@@ -103,7 +103,7 @@ function EVSelection() {
 						</div>
 						<div className="flex items-center gap-12 col-span-3 flex-col md:flex-row">
 							<div className="">
-								<img src={selectedCar.info.img} className="w-[40rem]" alt="electric car" />
+								<img src={selectedCar.info.img} loading="lazy" rel="preload" className="w-[40rem]" alt="electric car" />
 							</div>
 							<div className="text-center w-full md:w-72 flex-shrink-0 mt-12 md:mt-0">
 								<div className="flex bg-green-400 text-white items-center justify-center px-2 py-3">

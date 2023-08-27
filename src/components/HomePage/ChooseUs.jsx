@@ -8,7 +8,7 @@ import Background from "../../images/HomePage/choose-us/choose-us-bg.jpeg";
 function ChooseUs() {
 	return (
 		<section className="relative h-full w-full bg-neutral-100">
-			<img src={Background} className="absolute z-0 object-cover w-full h-full opacity-70" alt="abstract background" />
+			<img src={Background} loading="lazy" className="absolute z-0 object-cover w-full h-full opacity-70" alt="abstract background" />
 			<div className="flex justify-center">
 				<div className="w-full max-w-screen-xl mx-10 py-20 z-10 mt-32">
 					<div>

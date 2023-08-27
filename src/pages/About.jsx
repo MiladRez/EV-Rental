@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import CarNature from "../images/AboutPage/about-us-car-tree.jpeg";
+import CarNatureSmall from "../images/AboutPage/about-us-car-tree-small.jpeg";
 import Footer from '../components/Footer';
 import PageHeader from '../components/PageHeader';
 
 function About() {
+	const [loaded, setLoaded] = useState(false);
+
 	return (
 		<>
 			<Navbar />
@@ -12,7 +15,9 @@ function About() {
 			<div className='relative w-full bg-neutral-100'>
 				<div className='flex justify-center mx-10 lg:py-20'>
 					<div className='flex flex-col items-center lg:flex-row gap-12 max-w-screen-xl px-8'>
-						<img src={CarNature} className='absolute opacity-20 object-cover h-full w-full lg:opacity-100 lg:static lg:h-[40rem]' alt='car in nature' />
+						<div className='absolute h-full w-full bg-cover bg-center opacity-20 lg:opacity-100 lg:static lg:h-[40rem]' style={{ backgroundImage: "url(" + CarNatureSmall + ")" }}>
+							<img src={CarNature} className={`${loaded ? "opacity-100" : "opacity-0"} object-cover h-full w-full transition-all duration-300`} alt='car in nature' onLoad={() => setLoaded(true)} />	
+						</div>
 						<div className='flex flex-col gap-4 py-10 lg:py-0'>
 							<h2 className='text-lg sm:text-2xl font-bold'>Who we are</h2>
 							<h1 className='text-2xl sm:text-4xl font-bold'>Welcome to EV Rental - Your Path to Sustainable Mobility!</h1>

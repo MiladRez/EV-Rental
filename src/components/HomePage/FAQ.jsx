@@ -11,7 +11,7 @@ function FAQ() {
 
 	return (
 		<section className="relative h-full w-full">
-			<img src={PorscheTaycanBack} className="absolute w-[34rem] top-[50%] left-[-10rem]" alt="car" />
+			<img src={PorscheTaycanBack} loading="lazy" className="absolute w-[34rem] top-[50%] left-[-10rem]" alt="car" />
 			<div className="flex justify-center mx-10 py-28">
 				<div className="w-full max-w-screen-xl z-10">
 					<div className="flex flex-col items-center text-center">

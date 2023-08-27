@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BannerBG from '../../images/HomePage/book-ride/book_ride_bg.jpg';
+import BannerBG from '../../images/HomePage/book-ride/book_ride_bg.jpeg';
 import Background from "../../images/HomePage/book-ride/hero_bg_mirror.png";
 import SelectRideIcon from "../../images/HomePage/book-ride/select_ride_icon.png";
 import SelectLocationIcon from "../../images/HomePage/book-ride/select_location_icon.png";
@@ -45,22 +45,24 @@ function BookRide() {
 
 	return (
 		<section className='relative h-full w-full bg-neutral-100'>
-			<img src={Background} className="absolute w-full h-full z-0 top-[-1.6px] -scale-y-100 hidden sm:block" alt="hero background"></img>
+			<img src={Background} loading='lazy' className="absolute w-full h-full z-0 top-[-1.6px] -scale-y-100 hidden sm:block" alt="hero background"></img>
 			<div className='flex justify-center mx-10 pb-20'>
 				<div className='relative bg-white h-fit w-screen max-w-screen-xl rounded shadow-xl'>
-					<img src={BannerBG} className='absolute left-0 top-0 opacity-10 object-cover h-full w-full' alt='banner background'></img>
+					<img src={BannerBG} className='absolute left-0 top-0 opacity-20 object-cover h-full w-full' alt='banner background'></img>
 					<div className='relative z-[1] flex flex-col px-12 pb-16 pt-12'>
 						<h1 className='text-2xl font-bold mb-6'>Book a ride</h1>
 						<form className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10'>
 							<div>
 								<div className='relative flex my-2'>
-									<img src={SelectRideIcon} className='relative bottom-2 mr-2 h-8' alt='select ride icon' />
+									<img src={SelectRideIcon} loading='lazy' className='relative bottom-2 mr-2 h-8' alt='select ride icon' />
 									<label className='text-lg font-bold'>
 										Select your EV
 									</label>
 								</div>
-								<select required defaultValue={'default'}  className='w-full px-5 py-3 rounded text-neutral-500'>
-									<option value="default" disabled>Select your ride</option>
+								<select required defaultValue={'default'} className="w-full px-5 py-3 rounded text-neutral-500 border-2 border-slate-400 appearance-none">
+									<option value="default" disabled>
+										Select your ride
+									</option>
 									{ev_selection.map((car, index) => (
 										<option value={car.value} key={index}>
 											{car.label}
@@ -70,12 +72,12 @@ function BookRide() {
 							</div>
 							<div>
 								<div className='relative flex my-2'>
-									<img src={SelectLocationIcon} className='relative bottom-0.5 mr-2 h-7 mb-1' alt='select pick-up location icon' />
+									<img src={SelectLocationIcon} loading='lazy' className='relative bottom-0.5 mr-2 h-7 mb-1' alt='select pick-up location icon' />
 									<label className='text-lg font-bold'>
 										Pick-up Location
 									</label>
 								</div>
-								<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500'>
+								<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500 border-2 border-slate-400'>
 									<option value="default" disabled>Select a pick-up location</option>
 									{location_selection.map((car, index) => (
 										<option value={car.value} key={index}>
@@ -86,12 +88,12 @@ function BookRide() {
 							</div>
 							<div>
 								<div className='relative flex my-2'>
-									<img src={SelectLocationIcon} className='relative bottom-0.5 mr-2 h-7 mb-1 -scale-x-100' alt='select drop-off location icon' />
+									<img src={SelectLocationIcon} loading='lazy' className='relative bottom-0.5 mr-2 h-7 mb-1 -scale-x-100' alt='select drop-off location icon' />
 									<label className='text-lg font-bold'>
 										Drop-off Location
 									</label>
 								</div>
-								<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500'>
+								<select required defaultValue={'default'} className='w-full px-5 py-3 rounded text-neutral-500 border-2 border-slate-400'>
 									<option value="default" disabled>Select a drop-off location</option>
 									{location_selection.map((car, index) => (
 										<option value={car.value} key={index}>
@@ -102,7 +104,7 @@ function BookRide() {
 							</div>
 							<div>
 								<div className='relative flex my-1.5'>
-									<img src={SelectDateIcon} className='relative bottom-1 mr-2 h-9' alt='select pick-up date icon' />
+									<img src={SelectDateIcon} loading='lazy' className='relative bottom-1 mr-2 h-9' alt='select pick-up date icon' />
 									<label className='text-lg font-bold'>
 										Pick-up Date
 									</label>
@@ -112,12 +114,12 @@ function BookRide() {
 									min={currentDate}
 									value={pickupDate}
 									onChange={onChangeDate}
-									className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono' 
+									className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono border-2 border-slate-400' 
 								/>
 							</div>
 							<div>
 								<div className='relative flex my-1.5'>
-									<img src={SelectDateIcon} className='relative bottom-1 mr-2 h-9' alt='select drop-off date icon' />
+									<img src={SelectDateIcon} loading='lazy' className='relative bottom-1 mr-2 h-9' alt='select drop-off date icon' />
 									<label className='text-lg font-bold'>
 										Drop-off Date
 									</label>
@@ -127,7 +129,7 @@ function BookRide() {
 									min={pickupDate}
 									value={dropoffDate}
 									onChange={(e) => setDropoffDate(e.target.value)}
-									className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono' 	
+									className='form-input w-full px-5 py-3 rounded text-neutral-500 font-mono border-2 border-slate-400' 	
 								/>
 							</div>
 							<button className='w-full self-end h-13 bg-green-400 border border-green-400 shadow-lg shadow-green-300 px-5 pb-3 pt-2 text-white text-lg font-bold rounded hover:shadow-green-400 transition duration-500 hover:bg-green-500'>
