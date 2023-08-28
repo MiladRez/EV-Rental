@@ -7,7 +7,7 @@ import PageHeader from '../components/PageHeader';
 function Vehicles() {
 	return (
 		<>
-			<Navbar />
+			<Navbar signedIn={false}/>
 			<PageHeader title="Vehicle Selection" />
 			<EVSelection />
 			<Footer />

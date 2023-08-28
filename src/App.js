@@ -6,6 +6,7 @@ import About from './pages/About';
 import Vehicles from './pages/Vehicles';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import UserDashboard from './pages/UserDashboard';
 
 function App() {
 	return (
@@ -15,8 +16,9 @@ function App() {
 				<Route path='/login' element={<LoginRegister />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/vehicles" element={<Vehicles />} />
-				<Route path='team' element={<Team />} />
-				<Route path='contact' element={<Contact />} />
+				<Route path='/team' element={<Team />} />
+				<Route path='/contact' element={<Contact />} />
+				<Route path='/dashboard' element={<UserDashboard />} />
 			</Routes>
 		</>
 	)

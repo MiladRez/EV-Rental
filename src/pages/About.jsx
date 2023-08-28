@@ -10,7 +10,7 @@ function About() {
 
 	return (
 		<>
-			<Navbar />
+			<Navbar signedIn={false} />
 			<PageHeader title="About Us" />
 			<div className='relative w-full bg-neutral-100'>
 				<div className='flex justify-center mx-10 lg:py-20'>

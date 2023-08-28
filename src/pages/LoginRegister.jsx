@@ -10,7 +10,9 @@ function LoginRegister() {
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	const [register, setRegister] = useState(location.state);
+	const [firstname, setFirstname] = useState("");
+	const [lastname, setLastname] = useState("");
+	const [register, setRegister] = useState(location.state.register);
 	const [showPassword, setShowPassword] = useState(false);
 	const [validPassword, setValidPassword] = useState(false);
 	const [invalidCreds, setInvalidCreds] = useState(false);
@@ -46,6 +48,26 @@ function LoginRegister() {
 
 	const handleFormSubmission = (e) => {
 		e.preventDefault();
+
+		// add new user to database
+		if (register) {
+			fetch("http://localhost:8000/api/users/", {
+				method: "POST",
+				headers: {
+					"Accept": "application/json",
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name: firstname + " " + lastname
+				})
+			})
+			.then(res => res.json())
+			.then(res => {
+				console.log(res)
+				navigate("/dashboard", { state: { id: res.id } })
+			})
+		}
+
 		navigate("/");
 	}
 
@@ -70,10 +92,10 @@ function LoginRegister() {
 									<h2 className="select-none text-primary">Personal Information</h2>
 									<div className="flex flex-col gap-4 pt-4">
 										<div className="border-b">
-											<input type="text" placeholder="First Name" required={register ? true : false} className="focus:ring-0 w-full text-sm border-none pl-0" />
+											<input type="text" placeholder="First Name" required={register ? true : false} className="focus:ring-0 w-full text-sm border-none pl-0" onChange={(e) => setFirstname(e.target.value)} />
 										</div>
 										<div className="border-b">
-											<input type="text" placeholder="Last Name" required={register ? true : false} className="focus:ring-0 w-full text-sm border-none pl-0" />
+											<input type="text" placeholder="Last Name" required={register ? true : false} className="focus:ring-0 w-full text-sm border-none pl-0" onChange={(e) => setLastname(e.target.value)} />
 										</div>
 										<div className="border-b">
 											<input type="number" placeholder="Phone Number" required={register ? true : false} className="focus:ring-0 w-full text-sm border-none pl-0" />

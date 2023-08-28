@@ -33,7 +33,7 @@ function CustomerReviews() {
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 						{customer_reviews.map((review, index) => (
-							<CustomerReviewCard review={review.review} name={review.name} location={review.location} img={review.img} />
+							<CustomerReviewCard key={index} review={review.review} name={review.name} location={review.location} img={review.img} />
 						))}
 					</div>
 				</div>

@@ -58,7 +58,7 @@ const team_members = [
 function Team() {
 	return (
 		<>
-			<Navbar />
+			<Navbar signedIn={false}/>
 			<PageHeader title="Our Team" />
 			<div className='bg-neutral-100'>
 				<div className='flex justify-center px-10 py-20'>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from "../images/navbar/ev_rental_logo.png";
 import { useNavigate } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({signedIn}) {
 
 	const [sidebar, setSidebar] = useState(false);
 	const navigate = useNavigate();
@@ -76,18 +76,30 @@ function Navbar() {
 						</a>
 					</div>
 				</div>
-				<div className='hidden block lg:inline-flex'>
-					<div className='text-lg font-bold inline-flex flex-wrap justify-center'>
-						<button className="inline-block px-5 py-3 text-black transition duration-300 hover:text-green-500 mt-4 lg:mt-0"
-							onClick={() => navigate("/login", {state: false})}>
-							Sign In
-						</button>
-						<button className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition duration-500 hover:text-white hover:bg-green-500 mt-4 lg:mt-0"
-							onClick={() => navigate("/login", {state: true})}>
-							Register
-						</button>
+				{signedIn ? 
+					<div className='hidden block lg:inline-flex'>
+						<div className='text-lg font-bold inline-flex flex-wrap justify-center'>
+							<button className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition duration-500 hover:text-white hover:bg-green-500 mt-4 lg:mt-0"
+								onClick={() => navigate("/login", { state: { register: false } })}>
+								Sign Out
+							</button>
+						</div>
 					</div>
-				</div>
+					:
+					<div className='hidden block lg:inline-flex'>
+						<div className='text-lg font-bold inline-flex flex-wrap justify-center'>
+							<button className="inline-block px-5 py-3 text-black transition duration-300 hover:text-green-500 mt-4 lg:mt-0"
+								onClick={() => navigate("/login", { state: { register: false } })}>
+								Sign In
+							</button>
+							<button className="inline-block bg-green-400 px-5 py-3 border border-green-400 shadow-lg shadow-green-300 hover:shadow-green-400 rounded text-white transition duration-500 hover:text-white hover:bg-green-500 mt-4 lg:mt-0"
+								onClick={() => navigate("/login", { state: { register: true } })}>
+								Register
+							</button>
+						</div>
+					</div>
+				}
+				
 			</div>
 		</nav>
 	)

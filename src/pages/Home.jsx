@@ -35,7 +35,7 @@ function Home() {
 					<path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
 				</svg>
 			</button>
-			<Navbar />
+			<Navbar signedIn={false}/>
 			<Hero />
 			<BookRide />
 			<PlanTrip />

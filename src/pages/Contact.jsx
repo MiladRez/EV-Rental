@@ -7,7 +7,7 @@ import Background from "../images/ContactPage/world-map.jpg";
 function Contact() {
 	return (
 		<>
-			<Navbar />
+			<Navbar signedIn={false}/>
 			<PageHeader title="Contact Us" />
 			<div className='relative w-full'>
 				<div className='flex justify-center mx-10 py-28'>
