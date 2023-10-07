@@ -72,8 +72,8 @@ function LoginRegister() {
 	}
 
 	return (
-		<div className="h-screen w-full bg-green-400">
-			<div className="flex justify-center items-center overflow-auto bg-green-400">
+		<div className="h-screen w-full bg-green-400 overflow-y-scroll no-scrollbar">
+			<div className="flex justify-center items-center bg-green-400">
 				<div className="my-20">
 					<div className="flex items-center h-full">
 						<div className="flex flex-col justify-center items-center bg-white w-[32rem] px-12 py-12 rounded-xl shadow-2xl">
@@ -129,7 +129,7 @@ function LoginRegister() {
 											}
 										</div>	
 									</div>
-									<div className={`text-xs flex flex-col gap-0.5 pt-2 ${register ? "max-h-64" : "max-h-0"} transition-all duration-100 overflow-hidden select-none`}>
+									<div className={`text-xs flex flex-col gap-0.5 pt-2 ${register ? "max-h-64" : "max-h-0"} transition-all duration-500 overflow-hidden select-none`}>
 										<p>Minimum length of 8 characters</p>
 										<p>Contains at least 1 number</p>
 										<p>Contains at least 1 special character</p>
