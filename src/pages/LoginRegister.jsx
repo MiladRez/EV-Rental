@@ -8,42 +8,42 @@ function LoginRegister() {
 
 	/* TODO: Add AWS Cognito functionality to validate users */
 
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	// const [email, setEmail] = useState("");
+	// const [password, setPassword] = useState("");
 	const [firstname, setFirstname] = useState("");
 	const [lastname, setLastname] = useState("");
 	const [register, setRegister] = useState(location.state.register);
 	const [showPassword, setShowPassword] = useState(false);
-	const [validPassword, setValidPassword] = useState(false);
+	// const [validPassword, setValidPassword] = useState(false);
 	const [invalidCreds, setInvalidCreds] = useState(false);
 	const [accountConfirmed, setAccountConfirmed] = useState(false);
 	const navigate = useNavigate();
 
-	const isValidPassword = (str) => {
-		let re = /^(?=.*\d)(?=.*[!@#$%^&*_-])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
-		return re.test(str);
-	}
+	// const isValidPassword = (str) => {
+	// 	let re = /^(?=.*\d)(?=.*[!@#$%^&*_-])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
+	// 	return re.test(str);
+	// }
 
 	const handlePassword = (e) => {
 		setInvalidCreds(false);
 		setAccountConfirmed(false);
-		if (register) {
-			if (isValidPassword(e.target.value)) {
-				setPassword(e.target.value)
-				setValidPassword(true)
-			} else {
-				setValidPassword(false);
-			}
-		} else {
-			setPassword(e.target.value)
-		}
+		// if (register) {
+		// 	if (isValidPassword(e.target.value)) {
+		// 		setPassword(e.target.value)
+		// 		setValidPassword(true)
+		// 	} else {
+		// 		setValidPassword(false);
+		// 	}
+		// } else {
+		// 	setPassword(e.target.value)
+		// }
 		
 	}
 
 	const handleEmail = (e) => {
 		setInvalidCreds(false);
 		setAccountConfirmed(false);
-		setEmail(e.target.value);
+		// setEmail(e.target.value);
 	}
 
 	const handleFormSubmission = (e) => {

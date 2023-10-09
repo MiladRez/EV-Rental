@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import CarDisplayCard from "../components/CarDisplayCard";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function UserDashboard() {
 
@@ -22,7 +22,7 @@ function UserDashboard() {
 			console.log(res)
 			setCarList(res.carList)
 		})
-	}, []);
+	}, [location.state.id]);
 
 	console.log(location.state.id)
 
