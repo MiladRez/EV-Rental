@@ -16,7 +16,7 @@ EV Rental is an online platform that streamlines the process of renting an elect
 
 ## Web App Screenshots :camera_flash:
 
+<br></br>
 <h3 align="center">Home Page :house_with_garden:</h3>
-
-![ev-rental netlify app_](https://github.com/MiladRez/EV-Rental/assets/29521979/de4578aa-9810-4cc1-973c-7fde54c43d25)
-
+<br></br>
+<img src=https://github.com/MiladRez/EV-Rental/assets/29521979/61d73880-530a-428a-8e58-3bc153f5a17e />
