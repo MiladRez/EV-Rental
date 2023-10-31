@@ -7,7 +7,7 @@ import EVSelection from '../components/HomePage/EVSelection';
 import SaveBigBanner from '../components/HomePage/SaveBigBanner';
 import ChooseUs from '../components/HomePage/ChooseUs';
 import CustomerReviews from '../components/HomePage/CustomerReviews';
-// import FAQ from '../components/HomePage/FAQ';
+import FAQ from '../components/HomePage/FAQ';
 import DownloadApp from '../components/HomePage/DownloadApp';
 import Footer from '../components/Footer';
 
@@ -43,7 +43,7 @@ function Home() {
 			<SaveBigBanner />
 			<ChooseUs />
 			<CustomerReviews />
-			{/* <FAQ /> */}
+			<FAQ />
 			<DownloadApp />
 			<Footer />
 		</>

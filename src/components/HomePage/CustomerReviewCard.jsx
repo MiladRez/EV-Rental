@@ -4,7 +4,7 @@ import QuotesImg from "../../images/HomePage/customer-reviews/quote-img.png";
 function CustomerReviewCard({review, name, location, img}) {
 	return (
 		<div className="flex flex-col justify-between rounded shadow-xl px-6 pt-8 pb-2 lg:px-12 lg:pt-14 lg:pb-4 bg-white">
-			<p className="text-xl lg:text-2xl leading-normal">
+			<p className="text-lg lg:text-2xl leading-normal">
 				"{review}"
 			</p>
 			<div className="flex justify-between py-8">

@@ -9,7 +9,7 @@ function Hero() {
 		<section className="relative h-screen w-full flex justify-center bg-neutral-100">
 			<img src={Background} loading="lazy" className="absolute w-full h-full z-0 hidden sm:block" alt="hero background"></img>
 			<div className="relative flex max-w-screen-xl w-full mt-7 items-center justify-center sm:justify-start">
-				<div className="w-80 xs:w-[28rem] z-[2] inline-flex justify-center flex-col flex-shrink-0 items-center sm:items-start sm:ml-14">
+				<div className="w-80 xs:w-[28rem] z-[2] inline-flex justify-center flex-col flex-shrink-0 items-center sm:items-start sm:ml-14 pt-16">
 					<h2 className="text-lg font-bold xs:text-2xl pb-4">Rent an EV now </h2>
 					<h1 className="text-2xl xs:text-2xl md:text-5xl pb-8 font-bold text-center sm:text-left">Find the perfect car with the <span className="text-green-400">lowest rates</span> in the market</h1>
 					<p className="text-md pb-6 text-center sm:text-left text-stone-600">Rent the car of your dreams. Unbeatable prices, unlimited range, flexible pick-up options and much more.</p>
