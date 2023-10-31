@@ -43,7 +43,7 @@ function Home() {
 			<SaveBigBanner />
 			<ChooseUs />
 			<CustomerReviews />
-			<FAQ />
+			{/* <FAQ /> */}
 			<DownloadApp />
 			<Footer />
 		</>
