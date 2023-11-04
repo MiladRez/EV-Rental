@@ -10,8 +10,8 @@ function Contact() {
 			<Navbar signedIn={false}/>
 			<PageHeader title="Contact Us" />
 			<div className='relative w-full'>
-				<div className='flex justify-center mx-10 py-28'>
-					<div className='flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 w-full max-w-screen-xl'>
+				<div className='flex justify-center mx-10 py-20 md:py-28'>
+					<div className='flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 w-full max-w-screen-xl px-5'>
 						<img src={Background} className='absolute z-0 top-0 left-0 object-cover opacity-5 h-full w-full' alt='background world map' />
 						<div className='flex flex-col gap-8 w-full sm:w-[28rem] items-center lg:items-start z-10'>
 							<h1 className='text-2xl sm:text-4xl font-bold text-center lg:text-start'>

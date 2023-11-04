@@ -10,7 +10,7 @@ function ChooseUs() {
 		<section className="relative h-full w-full bg-neutral-100">
 			<img src={Background} loading="lazy" className="absolute z-0 object-cover w-full h-full opacity-70" alt="abstract background" />
 			<div className="flex justify-center">
-				<div className="w-full max-w-screen-xl mx-10 py-20 z-10 mt-32">
+				<div className="w-full max-w-screen-xl mx-10 pb-10 md:pb-0 md:py-20 z-10 mt-32">
 					<div>
 						<img src={CarsDisplay} alt="triple cars lineup" />
 					</div>
@@ -25,7 +25,7 @@ function ChooseUs() {
 							</p>
 							<button className="bg-green-400 text-white text-md sm:text-lg font-bold px-6 py-4 my-4 rounded border border-green-400 shadow-lg shadow-green-300 transition duration-500 hover:shadow-green-400 hover:bg-green-500">
 								Find Details
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="inline ml-2 w-5 h-5">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-8 0 26 26" strokeWidth={2.5} stroke="currentColor" className="inline w-5 h-5">
 									<path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
 								</svg>
 							</button>

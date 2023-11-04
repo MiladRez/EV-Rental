@@ -87,7 +87,7 @@ function EVSelection() {
 
 	return (
 		<section className='h-full w-full bg-neutral-100'>
-			<div className="flex justify-center mx-10 py-20">
+			<div className="flex justify-center mx-10 md:py-20">
 				<div className="w-full max-w-screen-xl">
 					<div className="flex flex-col items-center w-full text-center mb-14">
 						<h1 className="text-4xl md:text-5xl font-bold py-4 antialiased">Our EV selection</h1>
@@ -159,7 +159,7 @@ function EVSelection() {
 										</span>
 									</div>
 								</div>
-								<button className="bg-green-400 w-full px-2 py-3 mt-4 text-white text-xl uppercase font-bold antialiased shadow-lg shadow-green-300 border border-green-400 rounded transition duration-500 hover:bg-green-500 hover:shadow-green-400" onClick={() => window.scrollTo({top: 585, left: 0, behavior: "smooth"})}>
+								<button className="bg-green-400 w-full px-2 py-3 mt-4 text-white text-xl uppercase font-bold antialiased shadow-lg shadow-green-300 border border-green-400 rounded transition duration-500 hover:bg-green-500 hover:shadow-green-400" onClick={() => window.scrollTo({top: 800, left: 0, behavior: "smooth"})}>
 									Reserve Now
 								</button>
 							</div>

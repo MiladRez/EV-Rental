@@ -9,7 +9,9 @@ function Vehicles() {
 		<>
 			<Navbar signedIn={false}/>
 			<PageHeader title="Vehicle Selection" />
-			<EVSelection />
+			<div className='py-20 bg-stone-100'>
+				<EVSelection />
+			</div>
 			<Footer />
 		</>
 	)

@@ -8,7 +8,7 @@ function DownloadApp() {
 	return (
 		<section className="relative h-full w-full bg-neutral-100 overflow-hidden">
 			<img src={Background} loading="lazy" className="absolute w-full h-full object-cover opacity-30 z-0" alt="page backround abstract" />
-			<div className="relative flex justify-center mx-10 py-28 h-full">
+			<div className="relative flex justify-center mx-10 py-20 md:py-28 h-full">
 				<div className="absolute flex justify-around w-full h-full top-0 left-0">
 					<div className="w-1/2"></div>
 					<div className="flex justify-center w-1/2">

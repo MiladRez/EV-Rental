@@ -49,24 +49,26 @@ function LoginRegister() {
 	const handleFormSubmission = (e) => {
 		e.preventDefault();
 
+		console.log(firstname + " " + lastname)
+
 		// add new user to database
-		if (register) {
-			fetch("http://localhost:8000/api/users/", {
-				method: "POST",
-				headers: {
-					"Accept": "application/json",
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({
-					name: firstname + " " + lastname
-				})
-			})
-			.then(res => res.json())
-			.then(res => {
-				console.log(res)
-				navigate("/dashboard", { state: { id: res.id } })
-			})
-		}
+		// if (register) {
+		// 	fetch("http://localhost:8000/api/users/", {
+		// 		method: "POST",
+		// 		headers: {
+		// 			"Accept": "application/json",
+		// 			"Content-Type": "application/json"
+		// 		},
+		// 		body: JSON.stringify({
+		// 			name: firstname + " " + lastname
+		// 		})
+		// 	})
+		// 	.then(res => res.json())
+		// 	.then(res => {
+		// 		console.log(res)
+		// 		navigate("/dashboard", { state: { id: res.id } })
+		// 	})
+		// }
 
 		navigate("/");
 	}

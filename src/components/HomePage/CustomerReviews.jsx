@@ -21,7 +21,7 @@ const customer_reviews = [
 function CustomerReviews() {
 	return (
 		<section className="h-full w-full bg-neutral-100">
-			<div className="flex justify-center mx-10 py-28">
+			<div className="flex justify-center mx-10 py-20 md:py-28">
 				<div className="w-full max-w-screen-xl">
 					<div className="flex flex-col items-center text-center mb-14">
 						<h2 className="text-2xl font-bold">Client's Testimonials</h2>
